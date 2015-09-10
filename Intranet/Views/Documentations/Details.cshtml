@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var entries = Model.Entries.ToList();
 }
 
 <h2>Details</h2>
@@ -51,9 +52,27 @@
             @Html.DisplayFor(model => model.CreatedBy)
         </dd>
 
-    </dl>
+
+
+
+</dl>
+</div>
+<div>
+    
+        @for (var index = 0; index < Model.Entries.Count(); index++) { 
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="col-sm-1"></span><strong>@Html.DisplayFor(model => entries[index].Title)</strong>
+                </div>
+                <div class="col-md-10">
+                    @Html.DisplayTextFor(model => entries[index].Value)
+                </div>
+            </div>
+        }
+
 </div>
 <p>
+    <hr />
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

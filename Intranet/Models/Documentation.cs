@@ -15,6 +15,7 @@ namespace Intranet.Models
         public string CreatedBy { get; set; }
 
         public virtual Category Category { get; set; }
+
         public virtual ICollection<Entry> Entries { get; set; }
     }
 }

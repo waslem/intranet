@@ -18,6 +18,7 @@ namespace Intranet.Controllers
         // GET: Documentations
         public ActionResult Index()
         {
+
             return View(db.Documentations.ToList());
         }
 
@@ -29,6 +30,7 @@ namespace Intranet.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Documentation documentation = db.Documentations.Find(id);
+            
             if (documentation == null)
             {
                 return HttpNotFound();
