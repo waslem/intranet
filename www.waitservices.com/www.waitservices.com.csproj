@@ -172,10 +172,6 @@
     <Compile Include="Migrations\201509111759022_init.Designer.cs">
       <DependentUpon>201509111759022_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201509111850094_add-aspnet.cs" />
-    <Compile Include="Migrations\201509111850094_add-aspnet.Designer.cs">
-      <DependentUpon>201509111850094_add-aspnet.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\Comment.cs" />
@@ -260,9 +256,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201509111759022_init.resx">
       <DependentUpon>201509111759022_init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201509111850094_add-aspnet.resx">
-      <DependentUpon>201509111850094_add-aspnet.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
