@@ -13,6 +13,5 @@ namespace www.waitservices.com.Models
 
         public virtual ICollection<Tag> Tags { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
-
     }
 }

@@ -5,14 +5,14 @@ namespace www.waitservices.com.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<www.waitservices.com.Models.MyDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<www.waitservices.com.DAL.MyDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(www.waitservices.com.Models.MyDbContext context)
+        protected override void Seed(www.waitservices.com.DAL.MyDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

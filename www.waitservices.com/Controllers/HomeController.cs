@@ -26,5 +26,12 @@ namespace www.waitservices.com.Controllers
 
             return View();
         }
+
+        public ActionResult Links()
+        {
+            ViewBag.Message = "Links";
+
+            return View();
+        }
     }
 }
