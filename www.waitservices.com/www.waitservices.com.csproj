@@ -163,14 +163,20 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="DAL\BlogContext.cs" />
-    <Compile Include="DAL\BlogInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201509111759022_init.cs" />
-    <Compile Include="Migrations\201509111759022_init.Designer.cs">
-      <DependentUpon>201509111759022_init.cs</DependentUpon>
+    <Compile Include="Migrations\201509121531097_Initial.cs" />
+    <Compile Include="Migrations\201509121531097_Initial.Designer.cs">
+      <DependentUpon>201509121531097_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509121531460_start.cs" />
+    <Compile Include="Migrations\201509121531460_start.Designer.cs">
+      <DependentUpon>201509121531460_start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509121534345_start2.cs" />
+    <Compile Include="Migrations\201509121534345_start2.Designer.cs">
+      <DependentUpon>201509121534345_start2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Blog.cs" />
@@ -245,6 +251,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="DAL\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -254,8 +261,14 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201509111759022_init.resx">
-      <DependentUpon>201509111759022_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201509121531097_Initial.resx">
+      <DependentUpon>201509121531097_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509121531460_start.resx">
+      <DependentUpon>201509121531460_start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509121534345_start2.resx">
+      <DependentUpon>201509121534345_start2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
