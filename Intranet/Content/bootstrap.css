@@ -4928,14 +4928,13 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-
   padding: 30px;
   margin-bottom: 30px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
-  color: #000;
-  background-color: #428bca;
+  color: #333333;
+  background-color: #bce8f1;
 }
 
 .jumbotron h1 {
